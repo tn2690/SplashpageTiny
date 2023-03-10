@@ -3,29 +3,51 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SplashpageTiny</title>
+    <title>Tiny | @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SplashpageTiny.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="background">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">SplashpageTiny</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/img/TinyLogo_500.png" height="115" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link navbarText" asp-area="" asp-page="/Companies">Companies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link navbarText" asp-area="" asp-page="/About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbarText" asp-area="" asp-page="/Podcast">Podcast</a>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropdown-toggle btn navbarText" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="textDark"><a class="dropdown-item" href="#">Writing</a></li>
+                                <li class="textDark"><a class="dropdown-item" href="#">Scout</a></li>
+                                <li class="textDark"><a class="dropdown-item" href="#">Newsletter</a></li>
+                                <li class="textDark"><a class="dropdown-item" href="#">Foundation</a></li>
+                                <li class="textDark"><a class="dropdown-item" href="#">Rolling Fund</a></li>
+                            </ul>
                         </li>
                     </ul>
+                    <a href="mailto:email@example.com" class="btn btn-outline-secondary p-3 mx-2">Get in touch</></a>
                 </div>
             </div>
         </nav>
@@ -36,9 +58,53 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - SplashpageTiny - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="container">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <a href="/Index"><img src="~/img/TinyLogo_500.png" height="100" /></a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <p class="navbarText">Tiny</p>
+                    <a href="/Companies" class="navbarText">Companies</a>
+                    <a href="/About" class="navbarText">About</a>
+                    <a href="mailto:email@example.com" class="navbarText">Contact</a>
+                    <a href="/Podcast" class="navbarText">Podcast</a>
+                </div>
+                <div class="col-12 col-lg-2 my-5">
+                    <a href="/Writing" class="navbarText">Writing</a>
+                    <a href="" class="navbarText">Newsletter</a>
+                    <a href="/Foundation" class="navbarText">The Tiny Foundation</a>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <p class="navbarText">Work with us</p>
+                    <a href="/Recruitment" class="navbarText">Work for a Tiny company</a>
+                    <a href="/Scout" class="navbarText">Become a Tiny scout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-12 my-5">
+                <h6 class="text-center m-5">Sign up for the Tiny Dispatch, a monthly digest of what we're thinking, learning, and looking to do next.</h6>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"><button type="submit"><i class="bi bi-arrow-right-circle mx-2"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                &copy; 2023 Tiny
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-end">
+                    <a href="#top" class="textLight">BACK TO TOP<i class="bi bi-arrow-up-circle mx-2"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 

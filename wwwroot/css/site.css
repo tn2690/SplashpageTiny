@@ -1,18 +1,132 @@
+
+:root {
+    /* colors for the template */
+    --tn-primary-color: rgb(41, 157, 216);
+    --tn-secondary-color: rgb(42, 198, 201);
+    --tn-highlight-color: rgb(249, 253, 5);
+    --tn-dark-color: rgb(15, 22, 50);
+    --tn-light-color: rgb(42, 198, 201);
+    --tn-background-color: rgba(22, 148, 167, .8);
+    --tn-text-dark-color: rgb(15, 22, 50);
+    --tn-text-light-color: rgb(255, 255, 255);
+    --tn-nav-toggler-glow: rgba(43, 230, 114, 0.55);
+
+    /* fonts */
+    --tn-navbar-text: 'Tilt Warp', cursive;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    color: white;
 }
+
+/*.content {
+    flex: 1 0 auto;
+    margin-top: 4rem;
+}*/
+
+h1 {
+    font-size: 65px;
+}
+
+/* background image */
+/*.bgImage {
+    background: linear-gradient(rgba(165, 243, 145, 0.9), rgba(245, 243, 243, 0.7)), url("/img/loanbackground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+.background {
+    /*background: #FC466B;*/ /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);*/ /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #3F5EFB, #FC466B);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: blue;
+}
+
+/*--------- button overrides start ----------*/
+
+.btn-outline-secondary {
+    color: var(--tn-text-light-color) !important;
+}
+
+    .btn-outline-secondary:hover,
+    .btn-outline-secondary:active,
+    .btn-outline-secondary:focus {
+        background-color: var(--tn-text-light-color);
+        color: var(--tn-primary-color) !important;
+}
+
+.btn:hover {
+    color: var(--tn-text-light-color);
+    text-decoration: underline;
+}
+
+.btn-outline-primary {
+    color: var(--tn-text-dark-color) !important;
+}
+
+    .btn-outline-primary:hover,
+    .btn-outline-primary:active,
+    .btn-outline-primary:focus {
+        background-color: var(--tn-primary-color);
+        color: var(--tn-text-light-color) !important;
+    }
+/*--------- button overrides start ----------*/
+
+.navbar li a {
+    /*color: var(--tn-text-light-color);*/
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: var(--tn-text-light-color);
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+    }
+
+ .textLight {
+     color: var(--tn-text-light-color);
+ }
+
+ .textDark {
+     color: var(--tn-text-dark-color);
+ }
+
+ .textBlue {
+     color: var(--tn-primary-color);
+ }
+
+ .navbarText {
+     font-family: var(--tn-navbar-text);
+     color: var(--tn-text-light-color);
+ }

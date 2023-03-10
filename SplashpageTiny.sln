@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashpageTiny", "SplashpageTiny.csproj", "{EC6AA33E-8AB7-4EA4-8145-E37A525668E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SplashpageTiny", "SplashpageTiny.csproj", "{EC6AA33E-8AB7-4EA4-8145-E37A525668E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
