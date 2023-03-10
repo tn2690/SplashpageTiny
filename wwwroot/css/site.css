@@ -130,3 +130,17 @@ h1 {
      font-family: var(--tn-navbar-text);
      color: var(--tn-text-light-color);
  }
+
+ .majorityOwnedText {
+     color: aqua;
+     text-decoration: underline;
+     text-decoration-thickness: 2px;
+ }
+
+ #boldText {
+     font-weight: bold;
+ }
+
+hr {
+     border: 2px solid white;
+ }

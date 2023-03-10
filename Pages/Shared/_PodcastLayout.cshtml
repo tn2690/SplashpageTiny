@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SplashpageTiny.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/hoverCard.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3 background">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/img/TinyLogo_500.png" height="115" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -21,10 +30,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Companies">Companies</a>
+                            <a class="nav-link navbarText" asp-area="" asp-page="/Companies">Companies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/About">About</a>
+                            <a class="nav-link navbarText" asp-area="" asp-page="/About">About</a>
                         </li>
                         <li>
                             <a class="nav-link" asp-area="" asp-page="/Search"><i class="bi bi-search mx-2"></i></a>
@@ -41,9 +50,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted background">
         <div class="container text-center">
-            &copy; 2023 - SplashpageTiny
+            &copy; 2023 Tiny Office Hours
         </div>
     </footer>
 
